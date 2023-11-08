@@ -193,13 +193,13 @@
         <div class="col-md-6 px-0">
           <div class="img_container">
             <div class="img-box">
-              <img src="images/depressed-3  .jpg" alt="" />
+              <img src="images/depressed-3.jpg" alt="" />
             </div>
           </div>
         </div>
         <div class="col-md-6 px-0">
           <div class="detail-box">
-            <div class="heading_container ">
+            <div class="heading_container">
               <h2>
                 DEPTEST
               </h2>
