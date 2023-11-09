@@ -54,6 +54,7 @@ const questions = [
   const resultElement = document.getElementById("result");
   const titleElement = document.getElementById("title");
   const gaugeElement = document.getElementById("anychart-embed-samples-gauge-linear-04");
+  const depLevelLabel = document.getElementById("depression-level-label");  
 
   
   let currentQuestion = 0;
@@ -121,10 +122,12 @@ const questions = [
       textResult ="There are no symptoms of depression.";
     }
     score = score/27*100;
+    depLevelLabel.style.visibility = "visible";
     drawGauge()
     titleElement.textContent = "Test Results";
     resultElement.textContent = textResult;
     gaugeElement.style.display = "";
+    
   }
   
   // Load the first question
@@ -148,7 +151,7 @@ const questions = [
     else ac_style.appendChild(document.createTextNode(css));
     ac_add_to_head(ac_style);
   }
-  
+
   ac_add_link('https://cdn.anychart.com/releases/8.11.1/css/anychart-ui.min.css?hcode=a0c21fc77e1449cc86299c5faa067dc4');
   ac_add_style(document.getElementById("ac_style_samples-gauge-linear-04").innerHTML);
   ac_add_style(".anychart-embed-samples-gauge-linear-04{width:600px;height:450px;}");
